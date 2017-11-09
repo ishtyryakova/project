@@ -1,4 +1,4 @@
-#News web-site 
+# News web-site 
 
 ## Settings information
 - git clone https://github.com/ishtyryakova/project.git
@@ -6,3 +6,8 @@
 - import site.sql file into database site
 
 default branch master
+
+### Branches
+
+Ekaterina
+
