@@ -27,6 +27,7 @@
 
     
     <link href="css/blog-home.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
 
   </head>
 
@@ -55,25 +56,26 @@
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarResponsive">
-          <ul class="navbar-nav ml-auto">
+          <ul class="navbar-nav ml-auto" id="menu">
             <li class="nav-item active">
-              <a class="nav-link" href="#">Home
+              <a class="nav-link" href="#" data-body="This is our home page">Home
                 <span class="sr-only">(current)</span>
               </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="static.php?url=about">About</a>
+              <a class="nav-link" href="static.php?url=about" data-body="Learn more about us">About</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="static.php?url=services">Services</a>
+              <a class="nav-link" href="static.php?url=services" data-body="Learn more about our services">Services</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="static.php?url=contacts">Contacts</a>
+              <a class="nav-link" href="static.php?url=contacts" data-body="Contact us">Contacts</a>
             </li>
           </ul>
         </div>
       </div>
     </nav>
+	<div id="title">Welcome to our web-site!</div>
 
     
     <div class="container">
