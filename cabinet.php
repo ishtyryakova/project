@@ -5,7 +5,7 @@
 	$pbody = $_POST['body'];
 	$pcatalogue_id = (int)$_POST['catalogue_id'];
 	
-		if ($_FILES)	{
+		if ($_FILES['picture'])	{
 			$_FILES['picture']['type'];
 			
 			$file_name_tmp = $_FILES['picture']['tmp_name'];
@@ -15,6 +15,8 @@
 			$picture =  date('y_m_d_h_i_s').'.jpg';
 				if (move_uploaded_file($file_name_tmp, $file_new_name.$picture)){
 					$ok= true;
+				}else{
+					$picture='';
 				}
 		}
 		

@@ -50,6 +50,17 @@
     <script src="js/cabinet.js"></script>
 	<script src="js/script.js"></script>
 	
+<?php 
+	if (!empty($scripts))	{
+		foreach($scripts as $script)	{
+?>
+	<script src="<?php echo $script?>"></script>
+		
+<?php }
+		
+	}
+?>
+	
   </body>
 
 </html>

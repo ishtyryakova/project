@@ -24,6 +24,24 @@ $("#menu li a").bind({
 								}); 
 								
 				var modal = $('<div>').addClass('modal-window').appendTo(background);
+				var url = $(this).attr('href');
+						$.ajax({
+							url: "ajax.php",
+							type: "post",
+							data: "url="+url,
+							success: function(data)	{
+								modal.append(data);
+								
+							},
+							error: function(msg)	{
+								modal.append(msg);
+							}
+							
+							
+							
+							
+						})
+				
 				$('<a>').attr('href','#')
 					.addClass('modal-close-btn')
 					.html('&times;')
@@ -36,11 +54,14 @@ $("#menu li a").bind({
 				
 					})
 					.appendTo(modal);
+					
+					
 				
 			}
 		
 			else {
 				var modal = $('.modal-window');
+				
 		
 			}
 			
@@ -49,4 +70,6 @@ $("#menu li a").bind({
 	}
 	
 });
+
+
 
